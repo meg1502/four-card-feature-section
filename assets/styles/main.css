@@ -66,8 +66,17 @@ body {
     display: grid;
     grid-template: 1fr 1fr 1fr 1fr / 1fr ;
     row-gap: var(--space-400);
+    column-gap: var(--space-400);
     width: 100%;
+    max-width: 75rem;
     margin-top: var(--space-500);
+    place-items: center;
+    grid-template-areas: 
+        "supervisor"
+        "teambuilder"
+        "karma"
+        "calculator";
+
 }
 .component-card {
     border-top: 0.25rem solid var(--color-cyan);
@@ -77,18 +86,26 @@ body {
     flex-direction: column;
     align-items: left;
     padding: var(--space-400);
+    max-width: 20rem;
+}
+
+.component-card.supervisor {
+    grid-area: supervisor;
 }
 
 .component-card.teambuilder {
     border-color: var(--color-red);
+    grid-area: teambuilder;
 }
 
 .component-card.karma {
     border-color: var(--color-orange);
+    grid-area: karma;
 }
 
 .component-card.calculator {
     border-color: var(--color-blue);
+    grid-area: calculator;
 }
 
 .component-icon {
@@ -128,4 +145,23 @@ body {
         font-size: 2.25rem;
     }
 
+    .components-container {
+        grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr 1fr ;
+        grid-template-areas: 
+        ". teambuilder teambuilder ."
+        "supervisor supervisor karma karma"
+        ". calculator calculator .";
+    }
+}
+
+@media screen and (min-width:56rem) {
+
+    .components-container {
+        grid-template: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr ;
+        grid-template-areas: 
+        ". teambuilder ."
+        "supervisor teambuilder calculator"
+        "supervisor karma calculator"
+        ". karma .";
+    }
 }
