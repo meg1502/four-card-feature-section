@@ -1,0 +1,51 @@
+:root {
+    --color-grey-500: #4d4f62;
+    --color-grey-400: #6a7178;
+    --color-red: #ea5454;
+    --color-cyan: #44d3d2;
+    --color-blue: #549ef2;
+    --color-orange: #fcae4a;
+    --space-500: 2.5rem;
+    --space-400: 2rem;
+    --space-300: 1.5rem;
+    --space-200: 1rem;
+    --space-100: 0.5rem;
+    --font-poppins: "Poppins", sans-serif;
+}
+
+.text-preset-1 {
+    font-family: var(--font-poppins);
+    font-weight: 600;
+    font-size: 2.25rem;
+    line-height: 140%;
+    letter-spacing: 0.016rem;
+}
+
+.text-preset-2 {
+    font-family: var(--font-poppins);
+    font-weight: 200;
+    font-size: 2.25rem;
+    line-height: 140%;
+    letter-spacing: 0.016rem;
+}
+
+.text-preset-3 {
+    font-family: var(--font-poppins);
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: 135%;
+}
+
+.text-preset-4 {
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    font-size: 0.9375rem;
+    line-height: 140%;
+}
+
+.text-preset-5 {
+    font-family: var(--font-poppins);
+    font-weight: 400;
+    font-size: 0.8125rem;
+    line-height: 160%;
+}
