@@ -16,7 +16,7 @@
 .text-preset-1 {
     font-family: var(--font-poppins);
     font-weight: 600;
-    font-size: 2.25rem;
+    font-size: 1.5rem;
     line-height: 140%;
     letter-spacing: 0.016rem;
 }
@@ -24,7 +24,7 @@
 .text-preset-2 {
     font-family: var(--font-poppins);
     font-weight: 200;
-    font-size: 2.25rem;
+    font-size: 1.5rem;
     line-height: 140%;
     letter-spacing: 0.016rem;
 }
@@ -48,4 +48,84 @@
     font-weight: 400;
     font-size: 0.8125rem;
     line-height: 160%;
+}
+
+body {
+    color: var(--color-grey-500);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--space-500);
+}
+
+.component-desc {
+    color: var(--color-grey-400);
+}
+
+.components-container {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr / 1fr ;
+    row-gap: var(--space-400);
+    width: 100%;
+    margin-top: var(--space-500);
+}
+.component-card {
+    border-top: 0.25rem solid var(--color-cyan);
+    border-radius: var(--space-100);
+    box-shadow: 0 0.25rem 0.25rem rgba(0,0,0,0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: var(--space-400);
+}
+
+.component-card.teambuilder {
+    border-color: var(--color-red);
+}
+
+.component-card.karma {
+    border-color: var(--color-orange);
+}
+
+.component-card.calculator {
+    border-color: var(--color-blue);
+}
+
+.component-icon {
+    align-self: flex-end;
+    width: 4rem;
+    height: 4rem;
+    margin-top: var(--space-400);
+}
+
+.component-title {
+    margin: 0;
+}
+
+.component-desc {
+    margin: var(--space-100) 0 0 0;
+    
+}
+
+.title-section * {
+    text-align: center;
+}
+
+.bold-title {
+    margin: 0;
+}
+
+.thin-title {
+    margin: 0;
+}
+
+@media screen and (min-width:36rem) {
+
+    .text-preset-1 {
+        font-size: 2.25rem;
+    }
+    .text-preset-2 {   
+        font-size: 2.25rem;
+    }
+
 }
