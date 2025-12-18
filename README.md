@@ -29,8 +29,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://four-card-feature-section-jet-gamma.vercel.app/](https://four-card-feature-section-jet-gamma.vercel.app/)
 
 ## My process
 
@@ -70,5 +69,5 @@ In future projects, I would like to explore more complex CSS animations to add s
 
 ## Author
 
-- Website - [Your Name](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Website - [meg1502](https://meg1502.github.io)
+- Frontend Mentor - [@meg1502](https://www.frontendmentor.io/profile/meg1502)
